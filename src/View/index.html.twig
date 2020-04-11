@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h1> Hello {{ gurl }}!! You are {{ feeling }} !</h1><br /><br />
+    <img src="https://media.giphy.com/media/Eioj6zR1b8Dq8/giphy.gif"/>
+    <br /><br />
+<div class="container">
+    <div style="height: 90px;" class="row row-cols-3">
+            <br /><br />
+        {% for beautyProduct in beautyProducts %}
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.giphy.com/media/26tnfiHGP3qkN7pu0/giphy.gif" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ beautyProduct.prod }}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    {% block stylesheet %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% endblock %}
+</head>
+<header>
+    <nav class="navbar navbar-light" style="background-color: #ff4081; font-weight: bold;">
+        <a class="navbar-brand" href="#">
+            <img src="https://media.giphy.com/media/aH6dxU78RreY8/giphy.gif" width="30" height="30" class="d-inline-block align-top" alt="">
+            Bootystrap😘😘
+        </a>
+    </nav>
+</header>
+<body>
+{% block content %}
+{% endblock %}
+{% block javascripts %}
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+{% endblock %}
+</body>
+</html>
